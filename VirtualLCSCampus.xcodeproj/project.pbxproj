@@ -11,6 +11,11 @@
 		FB7AC12825EECDA80009B28F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7AC12725EECDA80009B28F /* ContentView.swift */; };
 		FB7AC12A25EECDAC0009B28F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7AC12925EECDAC0009B28F /* Assets.xcassets */; };
 		FB7AC12D25EECDAC0009B28F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7AC12C25EECDAC0009B28F /* Preview Assets.xcassets */; };
+		FB7AC13625EFEE440009B28F /* ListOfHouses.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7AC13525EFEE430009B28F /* ListOfHouses.swift */; };
+		FB7AC13A25F0732E0009B28F /* Grove.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7AC13925F0732E0009B28F /* Grove.swift */; };
+		FB7AC13E25F073830009B28F /* Upper Coreblock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7AC13D25F073830009B28F /* Upper Coreblock.swift */; };
+		FB7AC14125F074BC0009B28F /* Lower Coreblock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7AC14025F074BC0009B28F /* Lower Coreblock.swift */; };
+		FB7AC14525F1722D0009B28F /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7AC14425F1722D0009B28F /* SearchBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		FB7AC12925EECDAC0009B28F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB7AC12C25EECDAC0009B28F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB7AC12E25EECDAC0009B28F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB7AC13525EFEE430009B28F /* ListOfHouses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfHouses.swift; sourceTree = "<group>"; };
+		FB7AC13925F0732E0009B28F /* Grove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grove.swift; sourceTree = "<group>"; };
+		FB7AC13D25F073830009B28F /* Upper Coreblock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Upper Coreblock.swift"; sourceTree = "<group>"; };
+		FB7AC14025F074BC0009B28F /* Lower Coreblock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lower Coreblock.swift"; sourceTree = "<group>"; };
+		FB7AC14425F1722D0009B28F /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,11 @@
 			children = (
 				FB7AC12525EECDA80009B28F /* VirtualLCSCampusApp.swift */,
 				FB7AC12725EECDA80009B28F /* ContentView.swift */,
+				FB7AC14425F1722D0009B28F /* SearchBarView.swift */,
+				FB7AC13525EFEE430009B28F /* ListOfHouses.swift */,
+				FB7AC13925F0732E0009B28F /* Grove.swift */,
+				FB7AC13D25F073830009B28F /* Upper Coreblock.swift */,
+				FB7AC14025F074BC0009B28F /* Lower Coreblock.swift */,
 				FB7AC12925EECDAC0009B28F /* Assets.xcassets */,
 				FB7AC12E25EECDAC0009B28F /* Info.plist */,
 				FB7AC12B25EECDAC0009B28F /* Preview Content */,
@@ -139,7 +154,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB7AC12825EECDA80009B28F /* ContentView.swift in Sources */,
+				FB7AC13A25F0732E0009B28F /* Grove.swift in Sources */,
+				FB7AC13E25F073830009B28F /* Upper Coreblock.swift in Sources */,
+				FB7AC14525F1722D0009B28F /* SearchBarView.swift in Sources */,
+				FB7AC14125F074BC0009B28F /* Lower Coreblock.swift in Sources */,
 				FB7AC12625EECDA80009B28F /* VirtualLCSCampusApp.swift in Sources */,
+				FB7AC13625EFEE440009B28F /* ListOfHouses.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
