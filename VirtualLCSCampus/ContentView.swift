@@ -9,27 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
-        ZStack{
-        Image("LCSI")
-            .resizable()
-            .frame(width: 850.0, height: 860.0)
-        
-            Text("""
-            Welcom to
-            Lakefield College School
-            """)
-                .font(.title)
-                .fontWeight(.black)
-                .foregroundColor(Color.black)
-                .multilineTextAlignment(.center)
+        NavigationView{
+            ZStack{
+                Image("LCSI")
+                    .resizable()
+                    .frame(width: 870.0, height: 955.0)
+                VStack{
+                    Text("""
+                  Welcom to
+                  Lakefield College School
+                  """)
+                        .font(.title)
+                        .fontWeight(.black)
+                        .foregroundColor(Color.black)
+                        .multilineTextAlignment(.center)
+                        .padding(.bottom, 100.0)
                 
-            Button("Get Started -->"){
-            
+                    NavigationLink(destination: ListOfHouses()){
+                        Text("Start the Tour")
+                            .font(.title2)
+                            .foregroundColor(Color.white)
+                            .padding()
+                            .background(Color.green)
+                            .cornerRadius(15)
+                    }
+                }
             }
-            .padding(.top, 200.0)
-            .frame(width: 300.0, height: 300.0)
-       }
+        }
     }
 }
 
