@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB21B9AD25F67FE2001334DA /* Segament.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB21B9AC25F67FE2001334DA /* Segament.swift */; };
-		FB21B9B125F67FFB001334DA /* HouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB21B9B025F67FFB001334DA /* HouseView.swift */; };
+		FB4EE01425FA5F9300E99A0D /* HouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4EE01325FA5F9200E99A0D /* HouseView.swift */; };
+		FB4EE01A25FA60F400E99A0D /* ListHouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4EE01925FA60F400E99A0D /* ListHouse.swift */; };
 		FB7AC12625EECDA80009B28F /* VirtualLCSCampusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7AC12525EECDA80009B28F /* VirtualLCSCampusApp.swift */; };
 		FB7AC12825EECDA80009B28F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7AC12725EECDA80009B28F /* ContentView.swift */; };
 		FB7AC12A25EECDAC0009B28F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7AC12925EECDAC0009B28F /* Assets.xcassets */; };
@@ -18,8 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FB21B9AC25F67FE2001334DA /* Segament.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segament.swift; sourceTree = "<group>"; };
-		FB21B9B025F67FFB001334DA /* HouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseView.swift; sourceTree = "<group>"; };
+		FB4EE01325FA5F9200E99A0D /* HouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseView.swift; sourceTree = "<group>"; };
+		FB4EE01925FA60F400E99A0D /* ListHouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHouse.swift; sourceTree = "<group>"; };
 		FB7AC12225EECDA80009B28F /* VirtualLCSCampus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualLCSCampus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7AC12525EECDA80009B28F /* VirtualLCSCampusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualLCSCampusApp.swift; sourceTree = "<group>"; };
 		FB7AC12725EECDA80009B28F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,8 +64,8 @@
 				FB7AC12725EECDA80009B28F /* ContentView.swift */,
 				FB7AC14425F1722D0009B28F /* SearchBarView.swift */,
 				FB7AC13525EFEE430009B28F /* ListOfHouses.swift */,
-				FB21B9AC25F67FE2001334DA /* Segament.swift */,
-				FB21B9B025F67FFB001334DA /* HouseView.swift */,
+				FB4EE01325FA5F9200E99A0D /* HouseView.swift */,
+				FB4EE01925FA60F400E99A0D /* ListHouse.swift */,
 				FB7AC12925EECDAC0009B28F /* Assets.xcassets */,
 				FB7AC12E25EECDAC0009B28F /* Info.plist */,
 				FB7AC12B25EECDAC0009B28F /* Preview Content */,
@@ -150,10 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB21B9AD25F67FE2001334DA /* Segament.swift in Sources */,
 				FB7AC12825EECDA80009B28F /* ContentView.swift in Sources */,
+				FB4EE01A25FA60F400E99A0D /* ListHouse.swift in Sources */,
 				FB7AC14525F1722D0009B28F /* SearchBarView.swift in Sources */,
-				FB21B9B125F67FFB001334DA /* HouseView.swift in Sources */,
+				FB4EE01425FA5F9300E99A0D /* HouseView.swift in Sources */,
 				FB7AC12625EECDA80009B28F /* VirtualLCSCampusApp.swift in Sources */,
 				FB7AC13625EFEE440009B28F /* ListOfHouses.swift in Sources */,
 			);

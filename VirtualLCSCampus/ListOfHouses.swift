@@ -9,27 +9,29 @@ import SwiftUI
 
 struct ListOfHouses: View {
     @State private var text:String = ""
-    private var searchList = ["Grove", "Upper CoreBlock", "Lower CoreBlock", "Rashileigh", "Moodie", "Ryder", "Ondaatje", "Cooper", "Mathew", "Upland", "Wadsworth", "Memorial" ]
-    
+    private var searchList:[HouseContent] = houseContents
+
     var body: some View {
         VStack {
             SearchBarView(text: $text)
             Text(text)
+            
             List{
                 ForEach(0..<searchList.count){ num in
-                    
-                    NavigationLink(destination: Text("Placeholder")){
-                        Text(searchList[num])
+                    if text == "" ||  searchList[num].houseName.lowercased().contains(text.lowercased()) {
+                       
+                        NavigationLink(destination: HouseView(content: searchList[num])){
+                            Text(self.searchList[num].houseName)
+                        }
                     }
                 }
             }
+            Spacer()
         }
     }
 }
-
 struct ListOfHouses_Previews: PreviewProvider {
     static var previews: some View {
         ListOfHouses()
     }
 }
-
