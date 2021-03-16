@@ -41,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB4EE02125FFB61500E99A0D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB7AC14425F1722D0009B28F /* SearchBarView.swift */,
+				FB7AC12725EECDA80009B28F /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FB7AC11925EECDA80009B28F = {
 			isa = PBXGroup;
 			children = (
@@ -61,8 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				FB7AC12525EECDA80009B28F /* VirtualLCSCampusApp.swift */,
-				FB7AC12725EECDA80009B28F /* ContentView.swift */,
-				FB7AC14425F1722D0009B28F /* SearchBarView.swift */,
+				FB4EE02125FFB61500E99A0D /* Views */,
 				FB7AC13525EFEE430009B28F /* ListOfHouses.swift */,
 				FB4EE01325FA5F9200E99A0D /* HouseView.swift */,
 				FB4EE01925FA60F400E99A0D /* ListHouse.swift */,

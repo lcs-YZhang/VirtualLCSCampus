@@ -5,19 +5,31 @@
 //  Created by Steven Zhang on 2021-03-08.
 //
 
-import Foundation
+import SwiftUI
 
-struct Thing: Identifiable {
-    let id = UUID()
-    let title: String
-    let segment: [Segment]
+struct HouseView: View {
+    @State var content:HouseContent = HouseContent(houseName: "Cooper", image: "Cooper", introduction: "Cooper is a cool house")
+    var body: some View {
+        ScrollView{
+            VStack{
+                
+                Text(content.houseName)
+                
+                Image(content.image)
+                    .resizable()
+                    .scaledToFit()
+                Text(content.introduction)
+            }
+        }
+    }
 }
 
-let listOfHOuse = [
-Thing(title: "Grove",
-      segment: [
-        Segment(image: "Grove",
-                text: "The oldest house")
-      ])
-]
-    
+struct HouseView_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            HouseView()
+                .environment(\.sizeCategory, .large)
+            
+        }
+    }
+}
