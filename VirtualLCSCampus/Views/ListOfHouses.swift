@@ -20,7 +20,7 @@ struct ListOfHouses: View {
                 ForEach(0..<searchList.count){ num in
                     if text == "" ||  searchList[num].houseName.lowercased().contains(text.lowercased()) {
                        
-                        NavigationLink(destination: HouseView(content: searchList[num])){
+                        NavigationLink(destination: HouseView(houses: searchList[num])){
                             Text(self.searchList[num].houseName)
                         }
                     }

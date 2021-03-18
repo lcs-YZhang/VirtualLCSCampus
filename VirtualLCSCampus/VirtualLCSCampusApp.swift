@@ -11,6 +11,13 @@ import SwiftUI
 struct VirtualLCSCampusApp: App {
     var body: some Scene {
         WindowGroup {
+            TabView {
+                NavigationView {
+                    ListOfHouses()
+                }
+            }
+            .tabItem { Image(systemName: "list.bullet")
+                Text("House") }
             ContentView()
         }
     }

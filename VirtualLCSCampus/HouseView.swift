@@ -8,17 +8,20 @@
 import SwiftUI
 
 struct HouseView: View {
-    @State var content:HouseContent = HouseContent(houseName: "Cooper", image: "Cooper", introduction: "Cooper is a cool house")
+    
+    let houses: HouseContent
+    
     var body: some View {
-        ScrollView{
-            VStack{
-                
-                Text(content.houseName)
-                
-                Image(content.image)
+        ScrollView {
+            ForEach(houses.segment) {Segment in
+                Image(Segment.image)
                     .resizable()
                     .scaledToFit()
-                Text(content.introduction)
+                
+                Text(Segment.text)
+                    .padding(.horizontal, 25.0)
+                    .preferredColorScheme(.light)
+                    .environment(\.sizeCategory, .extraExtraLarge)
             }
         }
     }
@@ -27,7 +30,7 @@ struct HouseView: View {
 struct HouseView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            HouseView()
+            HouseView(houses: houseContents[0])
                 .environment(\.sizeCategory, .large)
             
         }
