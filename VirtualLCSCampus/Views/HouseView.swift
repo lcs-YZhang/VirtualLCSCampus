@@ -14,16 +14,18 @@ struct HouseView: View {
     var body: some View {
         ScrollView {
             ForEach(houses.segment) {Segment in
+                
                 Image(Segment.image)
                     .resizable()
                     .scaledToFit()
                 
                 Text(Segment.text)
-                    .padding(.horizontal, 25.0)
+                    .padding(.horizontal, 15.0)
                     .preferredColorScheme(.light)
-                    .environment(\.sizeCategory, .extraExtraLarge)
+                    .environment(\.sizeCategory, .large)
             }
         }
+        .navigationTitle(houses.houseName)
     }
 }
 
