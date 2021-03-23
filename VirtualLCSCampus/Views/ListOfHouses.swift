@@ -12,36 +12,21 @@ struct ListOfHouses: View {
     private var searchList:[HouseContent] = houseContents
     
     var body: some View {
-        
-        SearchBarView(text: $text)
-        Text(text)
-        List {
-            ForEach(0..<searchList.count){ num in
-                if text == "" ||  searchList[num].houseName.lowercased().contains(text.lowercased()) {
-                    
-                    NavigationLink(destination: HouseView(houses: searchList[num])){
-                        Text(self.searchList[num].houseName)
+        VStack {
+            SearchBarView(text: $text)
+            Text(text)
+            
+            List{
+                ForEach(0..<searchList.count){ num in
+                    if text == "" ||  searchList[num].houseName.lowercased().contains(text.lowercased()) {
+                       
+                        NavigationLink(destination: HouseView(houses: searchList[num])){
+                            Text(self.searchList[num].houseName)
+                        }
                     }
                 }
             }
-            
-        }
-        
-        Spacer()
-        
-        TabView {
-            NavigationView {
-                ListOfHouses()
-            }
-            .tabItem {
-                Image(systemName: "list.bullet")
-                Text("House") }
-            NavigationView {
-                MapView()
-            }
-            .tabItem {
-                Image(systemName: "map")
-                Text("Map") }
+            Spacer()
         }
         
     }

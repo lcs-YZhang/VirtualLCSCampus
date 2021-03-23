@@ -17,6 +17,7 @@
 		FBA0FA452601374400727508 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA0FA442601374400727508 /* Segment.swift */; };
 		FBA0FA53260384D500727508 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA0FA52260384D500727508 /* ContentView.swift */; };
 		FBA0FA5C26038AB800727508 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA0FA5B26038AB800727508 /* MapView.swift */; };
+		FBAF6F7C2608EC9E006BDB69 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF6F7B2608EC9E006BDB69 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FBA0FA442601374400727508 /* Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
 		FBA0FA52260384D500727508 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../ContentView.swift; sourceTree = "<group>"; };
 		FBA0FA5B26038AB800727508 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		FBAF6F7B2608EC9E006BDB69 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			children = (
 				FBA0FA52260384D500727508 /* ContentView.swift */,
 				FB7AC13525EFEE430009B28F /* ListOfHouses.swift */,
+				FBAF6F7B2608EC9E006BDB69 /* MainView.swift */,
 				FB4EE01325FA5F9200E99A0D /* HouseView.swift */,
 				FBA0FA5B26038AB800727508 /* MapView.swift */,
 				FB7AC14425F1722D0009B28F /* SearchBarView.swift */,
@@ -179,6 +182,7 @@
 				FBA0FA452601374400727508 /* Segment.swift in Sources */,
 				FB4EE01425FA5F9300E99A0D /* HouseView.swift in Sources */,
 				FB7AC12625EECDA80009B28F /* VirtualLCSCampusApp.swift in Sources */,
+				FBAF6F7C2608EC9E006BDB69 /* MainView.swift in Sources */,
 				FB7AC13625EFEE440009B28F /* ListOfHouses.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
