@@ -51,11 +51,10 @@
 			isa = PBXGroup;
 			children = (
 				FBA0FA52260384D500727508 /* ContentView.swift */,
-				FB7AC13525EFEE430009B28F /* ListOfHouses.swift */,
 				FBAF6F7B2608EC9E006BDB69 /* MainView.swift */,
-				FB4EE01325FA5F9200E99A0D /* HouseView.swift */,
-				FBA0FA5B26038AB800727508 /* MapView.swift */,
 				FB7AC14425F1722D0009B28F /* SearchBarView.swift */,
+				FB7AC13525EFEE430009B28F /* ListOfHouses.swift */,
+				FBA0FA5B26038AB800727508 /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -83,6 +82,7 @@
 				FBA0FA5A26038A2300727508 /* Data */,
 				FB4EE02125FFB61500E99A0D /* Views */,
 				FB4EE01925FA60F400E99A0D /* ListHouse.swift */,
+				FB4EE01325FA5F9200E99A0D /* HouseView.swift */,
 				FB7AC12925EECDAC0009B28F /* Assets.xcassets */,
 				FB7AC12E25EECDAC0009B28F /* Info.plist */,
 				FB7AC12B25EECDAC0009B28F /* Preview Content */,

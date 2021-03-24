@@ -14,7 +14,6 @@ struct ListOfHouses: View {
     var body: some View {
         VStack {
             SearchBarView(text: $text)
-            Text(text)
             
             List{
                 ForEach(0..<searchList.count){ num in
@@ -26,7 +25,6 @@ struct ListOfHouses: View {
                     }
                 }
             }
-            Spacer()
         }
         
     }

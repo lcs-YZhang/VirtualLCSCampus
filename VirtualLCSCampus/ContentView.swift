@@ -25,7 +25,7 @@ struct ContentView: View {
                         .multilineTextAlignment(.center)
                         .padding(.bottom, 100.0)
                 
-                    NavigationLink(destination: ListOfHouses()){
+                    NavigationLink(destination: MainView()){
                         Text("Start the Tour")
                             .font(.title2)
                             .foregroundColor(Color.white)
