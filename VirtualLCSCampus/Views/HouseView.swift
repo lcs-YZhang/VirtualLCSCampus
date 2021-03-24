@@ -9,11 +9,11 @@ import SwiftUI
 
 struct HouseView: View {
     
-    let houses: HouseContent
+    let currentHouse: HouseContent
     
     var body: some View {
         ScrollView {
-            ForEach(houses.segment) {Segment in
+            ForEach(currentHouse.segment) {Segment in
                 
                 Image(Segment.image)
                     .resizable()
@@ -25,14 +25,14 @@ struct HouseView: View {
                     .environment(\.sizeCategory, .large)
             }
         }
-        .navigationTitle(houses.houseName)
+        .navigationTitle(currentHouse.houseName)
     }
 }
 
 struct HouseView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            HouseView(houses: houseContents[0])
+            HouseView(currentHouse: houseContents[0])
                 .environment(\.sizeCategory, .large)
             
         }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import MapKit
 
 struct HouseContent : Identifiable {
     
@@ -13,6 +14,7 @@ struct HouseContent : Identifiable {
     let houseName:String
     let latitude: Double
     let longitude: Double
+    let coordinate: CLLocationCoordinate2D
     let segment: [Segment]
     
 }
@@ -22,6 +24,7 @@ let houseContents:[HouseContent] = [
     HouseContent(houseName: "Cooper",
                  latitude: 44.437622,
                  longitude: -78.267661,
+                 coordinate: CLLocationCoordinate2D(latitude: 44.437622, longitude: -78.267661),
                  
                  segment: [
                     Segment(title: "Cooper",
@@ -56,6 +59,7 @@ let houseContents:[HouseContent] = [
         houseName: "Grove",
         latitude: 44.43922,
         longitude: -78.26571,
+        coordinate: CLLocationCoordinate2D(latitude: 44.43922, longitude: -78.26571),
         segment: [
             Segment(title: "Grove",
                     image: "Grove",
@@ -81,6 +85,7 @@ let houseContents:[HouseContent] = [
     HouseContent(houseName: "Lower ColeBlock",
                  latitude: 44.440102,
                  longitude: -78.266765,
+                 coordinate: CLLocationCoordinate2D(latitude: 44.440102, longitude: -78.266765),
                  segment: [
                     Segment(title: "Lower Coleblock",
                             image: "",
@@ -91,6 +96,7 @@ let houseContents:[HouseContent] = [
     HouseContent(houseName: "Upper ColeBlock",
                  latitude: 44.440309,
                  longitude: -78.266715,
+                 coordinate: CLLocationCoordinate2D(latitude: 44.440309, longitude: -78.266715),
                  segment: [
                     Segment(title: "Upper Coleblock",
                             image: "",
@@ -101,6 +107,7 @@ let houseContents:[HouseContent] = [
     HouseContent(houseName: "Moodie",
                  latitude: 44.439261,
                  longitude: -78.267372,
+                 coordinate: CLLocationCoordinate2D(latitude: 44.439261, longitude: -78.267372),
                  segment: [
                     Segment(title: "Moodie",
                             image: "",
@@ -111,6 +118,7 @@ let houseContents:[HouseContent] = [
     HouseContent(houseName: "Matthews",
                  latitude: 44.437608,
                  longitude: -78.268260,
+                 coordinate: CLLocationCoordinate2D(latitude: 44.437608, longitude: -78.268260),
                  segment: [
                     Segment(title: "Matthews",
                             image: "",
@@ -121,6 +129,7 @@ let houseContents:[HouseContent] = [
     HouseContent(houseName: "Memorial",
                  latitude: 44.439562,
                  longitude: -78.264388,
+                 coordinate: CLLocationCoordinate2D(latitude: 44.439562, longitude: -78.264388),
                  segment: [
                     Segment(title: "Memorial",
                             image: "",
@@ -131,6 +140,7 @@ let houseContents:[HouseContent] = [
     HouseContent(houseName: "Ondaatje",
                  latitude: 44.438020,
                  longitude: -78.267318,
+                 coordinate: CLLocationCoordinate2D(latitude: 44.438020, longitude: -78.267318),
                  segment: [
                     Segment(title: "Ondaatje",
                             image: "",
@@ -141,6 +151,7 @@ let houseContents:[HouseContent] = [
     HouseContent(houseName: "Rashleigh",
                  latitude: 44.439889,
                  longitude: -78.267511,
+                 coordinate: CLLocationCoordinate2D(latitude: 44.439889, longitude: -78.267511),
                  segment: [
                     Segment(title: "Rashleigh",
                             image: "",
@@ -151,6 +162,7 @@ let houseContents:[HouseContent] = [
     HouseContent(houseName: "Ryder",
                  latitude: 44.438878,
                  longitude: -78.267522,
+                 coordinate: CLLocationCoordinate2D(latitude: 44.438878, longitude: -78.267522),
                  segment: [
                     Segment(title: "Ryder",
                             image: "",
@@ -161,6 +173,7 @@ let houseContents:[HouseContent] = [
     HouseContent(houseName: "Uplands",
                  latitude: 44.437156,
                  longitude: -78.268328,
+                 coordinate: CLLocationCoordinate2D(latitude: 44.437156, longitude: -78.268328),
                  segment: [
                     Segment(title: "Uplands",
                             image: "",
@@ -171,6 +184,7 @@ let houseContents:[HouseContent] = [
     HouseContent(houseName: "Wadsworth",
                  latitude: 44.438432,
                  longitude: -78.265112,
+                 coordinate: CLLocationCoordinate2D(latitude: 44.438432, longitude: -78.265112),
                  segment: [
                     Segment(title: "Wadsworth",
                             image: "",
