@@ -16,10 +16,14 @@ struct MapView: View {
                                                                   longitudeDelta: 0.005))
     
     var body: some View {
-        Map(coordinateRegion: $region, annotationItems: annotations) {
-            MapPin(coordinate: $0.coordinate)
+            Map(coordinateRegion: $region, annotationItems: annotations) { currentHouse in
+                MapAnnotation(coordinate: currentHouse.coordinate) {
+                    NavigationLink(destination: HouseView(currentHouse: houseContents[0])) {
+                        Text(currentHouse.name)
+                    }
+            }
+//            .navigationTitle("Map")
         }
-        .navigationTitle("Map")
     }
 }
 
