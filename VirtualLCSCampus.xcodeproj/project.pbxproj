@@ -18,6 +18,7 @@
 		FBA0FA53260384D500727508 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA0FA52260384D500727508 /* ContentView.swift */; };
 		FBA0FA5C26038AB800727508 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA0FA5B26038AB800727508 /* MapView.swift */; };
 		FBAF6F7C2608EC9E006BDB69 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF6F7B2608EC9E006BDB69 /* MainView.swift */; };
+		FBE488D2260BD5ED004B9B98 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE488D1260BD5ED004B9B98 /* Annotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		FBA0FA52260384D500727508 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../ContentView.swift; sourceTree = "<group>"; };
 		FBA0FA5B26038AB800727508 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		FBAF6F7B2608EC9E006BDB69 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FBE488D1260BD5ED004B9B98 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				FB7AC14425F1722D0009B28F /* SearchBarView.swift */,
 				FB7AC13525EFEE430009B28F /* ListOfHouses.swift */,
 				FBA0FA5B26038AB800727508 /* MapView.swift */,
+				FB4EE01325FA5F9200E99A0D /* HouseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -81,8 +84,6 @@
 				FB7AC12525EECDA80009B28F /* VirtualLCSCampusApp.swift */,
 				FBA0FA5A26038A2300727508 /* Data */,
 				FB4EE02125FFB61500E99A0D /* Views */,
-				FB4EE01925FA60F400E99A0D /* ListHouse.swift */,
-				FB4EE01325FA5F9200E99A0D /* HouseView.swift */,
 				FB7AC12925EECDAC0009B28F /* Assets.xcassets */,
 				FB7AC12E25EECDAC0009B28F /* Info.plist */,
 				FB7AC12B25EECDAC0009B28F /* Preview Content */,
@@ -102,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				FBA0FA442601374400727508 /* Segment.swift */,
+				FBE488D1260BD5ED004B9B98 /* Annotation.swift */,
+				FB4EE01925FA60F400E99A0D /* ListHouse.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				FB7AC14525F1722D0009B28F /* SearchBarView.swift in Sources */,
 				FBA0FA452601374400727508 /* Segment.swift in Sources */,
 				FB4EE01425FA5F9300E99A0D /* HouseView.swift in Sources */,
+				FBE488D2260BD5ED004B9B98 /* Annotation.swift in Sources */,
 				FB7AC12625EECDA80009B28F /* VirtualLCSCampusApp.swift in Sources */,
 				FBAF6F7C2608EC9E006BDB69 /* MainView.swift in Sources */,
 				FB7AC13625EFEE440009B28F /* ListOfHouses.swift in Sources */,
